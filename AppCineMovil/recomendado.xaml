@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCineMovil.recomendado">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="CINES" FontSize="20" 
+                   TextColor="Black" HorizontalTextAlignment="Center"/>
+
+            <Label x:Name="lbluser" TextColor="Gray" FontSize="17" 
+                   HorizontalTextAlignment="End"/>
+            <DatePicker HorizontalOptions="Start" IsEnabled="False"/>
+            <SearchBar Placeholder="Escribe para buscar..."/>
+
+            <Label Text="Ubicacion:" FontSize="15" TextColor="Black"/>
+
+            <Image Source="mapa.png"/>
+
+            <Label Text="Cines Recomendados:" FontSize="15" TextColor="Black"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button ImageSource="multicines.png" Clicked="Button_Clicked" Grid.Row="0" Grid.Column="0"/>
+                <Button ImageSource="supercines.png" Clicked="Button_Clicked_2" Grid.Row="0" Grid.Column="1"/>
+
+                <Button ImageSource="cinemark.png" Clicked="Button_Clicked_3" Grid.Row="1" Grid.Column="0"/>
+                <Button ImageSource="cinext.png" Clicked="Button_Clicked_4" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+
+
+            <Label Text="Cines Frecientes:" FontSize="15" TextColor="Black"/>
+            <Label/>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button ImageSource="multicines.png" Clicked="Button_Clicked_1" Grid.Row="0" Grid.Column="0"/>
+                <Button ImageSource="supercines.png" Clicked="Button_Clicked_5" Grid.Row="0" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCineMovil.Login">
+    <ContentPage.Content>
+        <StackLayout Padding="30" Spacing="30">
+            <Label Text="INGRESE SUS CREDENCIALES" FontSize="20" 
+                   TextColor="Black" HorizontalTextAlignment="Center"/>
+            <Image Source="login1.png"/>
+            <Entry Placeholder="Ingrese el usuario" Keyboard="Email" x:Name="usuario"></Entry>
+            <Entry Placeholder="Ingrese la contraseña" IsPassword="True" x:Name="contrasenia"></Entry>
+            <Button x:Name="BtnLogin" Text="INGRESAR" BackgroundColor="DarkCyan" TextColor="White" Clicked="BtnLogin_Clicked"></Button>
+            <Button x:Name="BtnRegistrar" Text="CREAR UNA CUENTA" Clicked="BtnRegistrar_Clicked"></Button>
+            <Button x:Name="BtnConsultar" Text="CONCULTAR USUARIOS" Clicked="BtnConsultar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
