@@ -10,8 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppCineMovil.Droid;
-using SQLite;
+//using AppCineMovil.Droid;
+//using SQLite;
 using System.IO;
 
 [assembly: Xamarin.Forms.Dependency(typeof(SqLiteCliente))]
